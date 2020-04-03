@@ -1,0 +1,34 @@
+<div class="container container-fluid">
+  <h2>Gebruikers</h2>
+  <hr>
+  <div class="form-group form-inline">
+    <input class="form-control max-width" type="text" placeholder="Zoek gebuikers.." />
+  </div>
+  <table class="table table-fixed">
+    <thead>
+    <th class="col-4" scope="col">Gebruikersnaam</th>
+    <th class="col-4" scope="col">Rol</th>
+    <th class="col-4" scope="col">Verwijderen</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td class="col-4"><p>{{user.username}}</p></td>
+        <td class="col-4">
+          <select name="role" class="form-control">
+            <option>Gebruiker</option>
+            <option>Medewerker</option>
+            <option>Superuser</option>
+            <option>Ongeverifieerd</option>
+          </select>
+        </td>
+        <td class="col-4">
+          <button class="btn btn-block btn-danger">Verwijder</button>
+        </td>
+      </tr>
+      <!-- Fix hover over table items -->
+    </tbody>
+  </table>
+  <div class="btn-group btn-toolbar save">
+    <button class="btn">Wijzigingen opslaan</button>
+  </div>
+</div>

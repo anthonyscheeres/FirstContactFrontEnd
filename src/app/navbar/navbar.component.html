@@ -1,0 +1,32 @@
+
+<div class="header-firstnav sticky-top">
+
+
+
+
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark" role="navigation">
+    
+
+    <nav class="navbar">
+
+      <a *ngIf="isLoggedIn==false" class="glyphicon glyphicon-log-in" routerLink="/"> Login</a>
+
+
+      <div *ngIf="isLoggedIn">
+
+        <a routerLink="/overzicht"> Overzicht</a>
+
+        <a routerLink="/profile"> Profiel</a>
+
+        <a routerLink="/users"> Gebruikers</a>
+
+
+        <a (click)="logOut()"><span class="glyphicon glyphicon-log-out"></span> Log out</a>
+
+      </div>
+
+    </nav>
+
+  </nav>
+</div>
