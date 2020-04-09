@@ -3,9 +3,11 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\navbar",
+    "\\src\\app\\login-form",
+    "\\src\\app\\overzicht",
+    "\\src\\app\\profile",
     "\\src\\app\\users"
   ],
-  "SelectedNode": "\\src\\app\\navbar\\navbar.component.html",
+  "SelectedNode": "\\src\\app\\profile\\profile.component.html",
   "PreviewInSolutionExplorer": false
 }
