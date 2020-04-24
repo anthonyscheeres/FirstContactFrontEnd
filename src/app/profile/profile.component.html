@@ -1,8 +1,6 @@
 
 
 
-  <article class="articlemiddle">
-
     <h2>Profiel</h2>
     <div *ngFor="let value of reservationDataFromServer">
       <p>Gebruiker: {{value.username}}</p>
@@ -14,4 +12,3 @@
 
     <button type="button" class="btn btn-success" (click)="sendMail()">Verstuur configuratie mail</button>
 
-  </article>
